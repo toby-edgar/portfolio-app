@@ -380,17 +380,16 @@ $('#home').one("click", function() {
         console.log(projectsFromMongo[i].author);
 
         function updateProjectsHome() {
-          var project = document.createElement('div');
-          project.classList.add('project');
-
-          adminSpace.append(project);
-          project.innerHTML = `
-
-            <h2 class="project-name">${projectsFromMongo[i].title}</h2>
-            <p class="description">${projectsFromMongo[i].description}</p>
-            <div class="item1">${projectsFromMongo[i].description}</div>`
-
-        }
+            var project = document.createElement('div');
+            project.classList.add('project');
+            adminSpace.append(project);
+            project.innerHTML = `
+              <h2 class="project-name">${projectsFromMongo[i].title}</h2>
+              <p class="description">${projectsFromMongo[i].description}</p>
+              <div class="item1">
+            <img src = ${projectsFromMongo[i].image_url}>
+              </div>`
+          }
 
         var adminSpace
         if (projectsFromMongo[i].author == "kris") {
