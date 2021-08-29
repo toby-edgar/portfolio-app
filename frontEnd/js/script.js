@@ -95,9 +95,10 @@ $('#submit').click(function() {
           .title
         // Date Added
         var projectListDate = document.createElement('div');
-        projectListDate.classList.add('project-list-date');
+        projectListDate.classList.add('project-list-author');
         projectStrip.append(projectListDate);
-        projectListDate.textContent = "21.12.21"
+        projectListDate.textContent = projectsFromMongo[i]
+          .author
 
         // Controls
         var projectListControl = document.createElement('div');
@@ -191,6 +192,12 @@ $('#submit').click(function() {
 
 //update the product:::::::::::::::::::::::::::::::::::::::::::::::::::
       function updateProject() {
+           $('#upProjectTitle').val(projectsFromMongo[selection].title)
+           $('#upProjectDecription').val(projectsFromMongo[selection].description)
+           $('#upProjectImg').val(projectsFromMongo[selection].image_url)
+
+
+
         $('#confirmUpdate').click(function() {
           event.preventDefault();
           let projectId = projectsFromMongo[selection]._id;

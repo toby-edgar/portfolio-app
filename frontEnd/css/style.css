@@ -315,7 +315,14 @@ textarea {
   color: #1b1b1b;
 }
 
-
+.flex {
+  display:flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.author {
+  margin-left: -2.3%;
+}
 
 
 /* Login overlay ends! */
@@ -336,8 +343,10 @@ textarea {
   width:33%;
 }
 
-.project-list-date {
+.project-list-author {
   text-align: center;
+  text-transform: capitalize;
+
 }
 .project-list-title {
   color: black;
