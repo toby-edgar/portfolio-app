@@ -124,20 +124,31 @@ nav{
   border-bottom: 3px solid #1b1b1b;
 }
 .project{
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
+  margin: auto;
+  height: 450px;
   border-bottom: 3px solid #1b1b1b;
 }
 .project:last-of-type{
   border: none;
 }
-.project-name{
-  margin-top: 20px;
+
+.project-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 45%;
+  height: 90%;
+  margin: 20px 0;
 }
+
 .description{
   position: relative;
   display: inline-block;
-  width: 400px;
+  width: 80%;
 }
 .item1{
   display: flex;
@@ -149,13 +160,13 @@ nav{
   border: none;
   border-radius:none;
   width: 45%;
-  height: 350px;
+  height: 90%;
   border: 1px solid black;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .item1 img {
-  height: 90%;
+  height: 80%;
 }
 
 button {

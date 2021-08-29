@@ -390,9 +390,12 @@ $('#home').one("click", function() {
             var project = document.createElement('div');
             project.classList.add('project');
             adminSpace.append(project);
-            project.innerHTML = `
+            project.innerHTML =
+            `
+            <div class="project-content">
               <h2 class="project-name">${projectsFromMongo[i].title}</h2>
               <p class="description">${projectsFromMongo[i].description}</p>
+            </div>
               <div class="item1">
             <img src = ${projectsFromMongo[i].image_url}>
               </div>`
