@@ -95,9 +95,10 @@ $('#submit').click(function() {
           .title
         // Date Added
         var projectListDate = document.createElement('div');
-        projectListDate.classList.add('project-list-date');
+        projectListDate.classList.add('project-list-author');
         projectStrip.append(projectListDate);
-        projectListDate.textContent = "21.12.21"
+        projectListDate.textContent = projectsFromMongo[i]
+          .author
 
         // Controls
         var projectListControl = document.createElement('div');
@@ -191,6 +192,12 @@ $('#submit').click(function() {
 
 //update the product:::::::::::::::::::::::::::::::::::::::::::::::::::
       function updateProject() {
+           $('#upProjectTitle').val(projectsFromMongo[selection].title)
+           $('#upProjectDecription').val(projectsFromMongo[selection].description)
+           $('#upProjectImg').val(projectsFromMongo[selection].image_url)
+
+
+
         $('#confirmUpdate').click(function() {
           event.preventDefault();
           let projectId = projectsFromMongo[selection]._id;
@@ -383,9 +390,12 @@ $('#home').one("click", function() {
             var project = document.createElement('div');
             project.classList.add('project');
             adminSpace.append(project);
-            project.innerHTML = `
+            project.innerHTML =
+            `
+            <div class="project-content">
               <h2 class="project-name">${projectsFromMongo[i].title}</h2>
               <p class="description">${projectsFromMongo[i].description}</p>
+            </div>
               <div class="item1">
             <img src = ${projectsFromMongo[i].image_url}>
               </div>`
