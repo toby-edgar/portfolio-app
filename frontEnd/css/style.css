@@ -1,0 +1,386 @@
+/* colours
+black #1b1b1b
+white #f4ead1 */
+
+
+body{
+  background-color: #f4ead1;
+}
+
+h1, h2{
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+/* .heading{
+  position: relative;
+  display: inline-block;
+  background: purple;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+} */
+/* new homePage section */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:130px;
+  border-bottom: 5px solid #1b1b1b;
+}
+
+.header-user {
+  text-transform: capitalize;
+}
+
+.fa-hamburger{
+  font-size: 35px;
+}
+.homePageSection{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:80px;
+  border-bottom: 5px solid #1b1b1b;
+} */
+
+.link-admin{
+  text-align: center;
+  color: #1b1b1b;
+  border: 2px solid #1b1b1b;
+  width:200px;
+  height: auto;
+  padding: 20px 0;
+  cursor:pointer;
+}
+.link-admin:hover
+{
+  background: #1b1b1b;
+  color: #f7f7f7;
+}
+
+
+.home-projects{
+  height:60px;
+  border-bottom: 5px solid #1b1b1b;
+}
+.accordian{
+  border: none;
+  box-shadow:none;
+}
+#accordionExample {
+  border: none;
+  box-shadow:none;
+}
+
+.accordion-item{
+  border: none;
+  border-radius:none;
+  border-bottom: 5px solid #1b1b1b;
+  background-color: #f4ead1;
+}
+
+#accordionBtn{
+  border: none;
+  background-color: #f4ead1;
+  box-shadow:none;
+}
+.accordion-title{
+  font-size: 100px;
+  text-align: left;
+  border: none;
+  box-shadow:none;
+  height:110px;
+  transition: 0.5s;
+}
+.accordion-title:hover {
+  color: #4d6b48;
+}
+
+.accordion-body{
+  display: inline-block;
+  border-radius: none;
+  height:500px;
+  width: 100%;
+  overflow: scroll;
+  border-radius: none;
+  overflow-x: hidden;
+  border: none;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+::-webkit-scrollbar-thumb {
+    background: #f4ead1;
+}
+
+.collapse {
+  border-radius: none;
+}
+.about{
+  border-bottom: 3px solid #1b1b1b;
+}
+.project{
+  display: inline-block;
+  width: 100%;
+  border-bottom: 3px solid #1b1b1b;
+}
+.project:last-of-type{
+  border: none;
+}
+.project-name{
+  margin-top: 20px;
+}
+.description{
+  position: relative;
+  display: inline-block;
+  width: 400px;
+}
+.item1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  float: right;
+  border: none;
+  border-radius:none;
+  width: 45%;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+button {
+  border: none;
+}
+
+
+
+/* original home page */
+.addProductForm{
+  background: red;
+  margin-bottom: 20px;
+}
+.inputIdDiv{
+  background: purple;
+  margin-bottom: 20px;
+}
+.delForm{
+  background: red;
+  margin-bottom: 20px;
+}
+.adminPage{
+  background: purple;
+}
+.registerForm{
+  background: purple;
+}
+/* original home page ENDS */
+
+li{
+  list-style: none;
+}
+
+
+
+/* forms */
+
+input,
+textarea {
+  margin-left: 10px;
+  background: #ededed;
+  width: 100%;
+  padding: 10px;
+}
+
+.input-sml {
+  border: 1px solid #1b1b1b;
+  height: 40px;
+}
+
+.input-lrg {
+  border: 1px solid #1b1b1b;
+  height: 80px;
+  resize: none;
+}
+
+.update-btn,
+.add-project-btn {
+  background-color:#1b1b1b;
+  border:none;
+  color: #f4ead1;
+  text-align: center;
+  width: 150px;
+  height: auto;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+
+/* Login overlay begins! */
+.login-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #f4ead1;
+  margin: auto;
+  left:0;
+  top:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.user-login {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  border-radius: 0;
+  background: none;
+  width: 300px;
+}
+
+
+.login-buttons {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.login-btn {
+  background-color:#1b1b1b;
+  border:none;
+  color: #f4ead1;
+  text-align: center;
+  width: 100px;
+  height: auto;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.register-btn {
+  background-color: #f4ead1;
+  border: 1px solid #1b1b1b;
+  color: #f4ead1;
+  text-align: center;
+  width: 100px;
+  height: auto;
+  padding: 10px 0;
+  cursor: pointer;
+  color: #1b1b1b;
+}
+
+/* Register Overlay */
+.register-overlay {
+  display: none;
+  width: 400px;
+  height: 500px;
+  position: fixed;
+  background: #f4ead1;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.exit-register-btn {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  font-size: 20px
+}
+
+.register-form {
+  margin-top: -50px;
+}
+
+.register-exit {
+  padding: 15px;
+  cursor: pointer;
+  color: #1b1b1b;
+}
+
+
+
+
+/* Login overlay ends! */
+.project-strip {
+  height:60px;
+  display: flex;
+  justify-content: space-between;
+  padding:20px;
+  border-bottom:1px solid #9c9c9c;
+}
+.up-del {
+  display: flex;
+  gap:30px;
+  align-self: flex-end;
+  justify-content:flex-end;
+}
+.project-strip div {
+  width:33%;
+}
+
+.project-list-date {
+  text-align: center;
+}
+.project-list-title {
+  color: black;
+}
+div#projectList > div:first-child {
+  border-top:1px solid #9c9c9c!important;
+}
+
+.admin-proj-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.my-btn {
+  background-color:#1b1b1b;
+  color: white;
+  text-align: center;
+  width:170px;
+  height: auto;
+  padding: 20px 0;
+  cursor: pointer;
+  border:none;
+}
+
+.logout-btn {
+  background-color:white;
+  color: #1b1b1b;
+  border: 1px solid #1b1b1b;
+  text-align: center;
+  padding: 5px 10px;
+  height: auto;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background-color:white;
+  color: #1b1b1b;
+  border: 1px solid #1b1b1b;
+  text-align: center;
+  padding: 5px 10px;
+  height: auto;
+  cursor: pointer;
+}
+
+.fa{
+  color:#1b1b1b;
+}
+
+#addProjectForm, #delProjectForm, #updateProjectForm  {
+  display: none;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../frontEnd/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="heading">
+    <h1 class="text-light py-4 px-5 rounded-pill">Portfolio</h1>
+  </div>
+
+<nav class="mt-5">
+        <button id="home" type="button" name="button" class="btn btn-primary btn-md mr-3 rounded-pill"><a class="text-light"  href="home.html">Home</a></button>
+</nav>
+
+  <!-- home page -->
+  <div class="homePage bg-dark" class="py-5 px-5">
+  <h2 class="text-light">Home page</h2>
+  <p class="text-light">This app will enable the user to store, edit and delete their products, if they are have admin privileges. Otherwise all visitors of this app can view the products. </p>
+  <a href="admin.html">See admin panel</a>
+  </div>
+
+  <!-- view page -->
+  <div id="result" class="row">
+  </div>
+
+  <!--add a product-->
+    <form class="addProductForm" class=" py-5 px-5">
+      <h1 class="text-light"> Add Product Form </h1> <br>
+      <label class="mr-5 text-light" for="a-productId"> Enter product Id: </label>
+      <input type="text" class="ml-5 rounded-pill" id="a-productId" name="inputId" >
+      <br><br>
+
+      <label class="mr-4 text-light" for="a-name"> Enter name of the product </label>
+      <input type="text" id="a-name" name="productName" class="rounded-pill">
+      <br><br>
+
+      <label class="mr-4 text-light" for="a-price"> Enter price of the product </label>
+      <input type="number" id="a-price" name="productPrice" class="rounded-pill">
+      <br><br>
+
+       <label class="mr-5 text-light" for="a-imageurl"> Enter the image url </label>
+      <input type="text" class="ml-5 rounded-pill" id="a-imageurl" name="a-imageurl" >
+      <br><br>
+
+      <button id="addProduct" name="productButton" type="submit" class="btn btn-primary rounded-pill">Add product</button>
+    </form>
+
+    <!-- Input product details for update -->
+      <div class="inputIdDiv" class="">
+        <form id="productForm" class="py-5 px-5">
+          <h1 class="text-light"> Update Product Form </h1>   <br><br>
+          <label class="mr-5 text-light" for="productId"> Enter product Id: </label>
+          <input type="text" class="ml-5 rounded-pill" id="productId" name="inputId" >
+          <br><br>
+
+          <label class="mr-4 text-light" for="productName"> Enter name of the product </label>
+          <input type="text" id="productName" name="productName" class="rounded-pill">
+          <br><br>
+
+          <label class="mr-4 text-light" for="productPrice"> Enter price of the product </label>
+          <input type="number" id="productPrice" name="productPrice" class="rounded-pill">
+          <br><br>
+
+          <label class="mr-5 text-light" for="imageurl"> Enter the image url </label>
+         <input type="text" class="ml-5 rounded-pill" id="imageurl" name="imageurl" >
+         <br><br>
+
+          <button id="updateProduct" name="productButton" type="submit" class="btn btn-primary rounded-pill">Update product</button>
+        </form>
+      </div>
+
+      <!-- Delete a product -->
+      <form class="delForm" class="py-5 px-5">
+        <label class="mr-5 text-light" for="delProductId"> Enter product Id to delete: </label>
+        <input type="text" class="ml-5 rounded-pill" id="delProductId" name="inputId" >
+        <br><br>
+          <button id="deleteProduct" name="productButton" type="submit" class="btn btn-primary rounded-pill">Delete product</button>
+      </form>
+
+
+
+  <!-- admin page -->
+  <div class="adminPage" class="py-5 px-5">
+    <button id="login" class="btn btn-sm" type="button" name="button">Login</button>
+    <button id="logout" class="btn btn-sm" type="button" name="button">Logout</button>
+
+    <button id="register"class="btn btn-sm" type="button" name="button">Register</button>
+  </div>
+
+  <!-- login form -->
+  <form class="loginForm" class="py-5 px-5 my-4 rounded-pill">
+    <label for="username" class="text-light"> Username: </label>
+    <input type="text" id="username" name="username" class="form-control" value="">
+    <br> <br>
+    <label for="password" class="text-light"> Password: </label>
+    <input type="password" name="password" id="password" class="form-control" value="">
+
+    <button id="submit" name="button" type="submit" class="btn bg-light text-dark btn-lg btn-dark mt-4"> Submit </button>
+  </form>
+
+  <!-- Register Form -->
+  <!-- <form action="/loginUser" method="post"> -->
+    <form class="registerForm" class="py-5 px-5 mt-4">
+      <div class="form-group text-light">
+        <label for="r-username">Username</label>
+        <input type="text" name="r-username" class="form-control" id="r-username" aria-describedby="emailHelp">
+
+      </div>
+      <div class="form-group text-light">
+        <label for="r-email">Email</label>
+        <input type="email" autocomplete="new-password" name="r-email" class="form-control" id="r-email">
+      </div>
+      <div class="form-group text-light">
+        <label for="r-password">Password</label>
+        <input type="password" autocomplete="new-password" name="r-password" class="form-control" id="r-password">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label text-light" for="exampleCheck1">Check me out</label>
+      </div>
+        <button id="r-submit" name="r-button" type="button" class="btn btn-primary">Submit</button>
+    </form>
+
+
+  <script src="../frontEnd/node_modules/jquery/dist/jquery.min.js">
+  </script>
+  <script src="../frontEnd/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <!-- <script src="js/config.js">
+  </script> -->
+  <script src="js/script.js">
+  </script>
+  <!-- // <script src="js/script2.js"> -->
+
+</body>
+</html>
