@@ -2,7 +2,6 @@
 black #1b1b1b
 white #f4ead1 */
 
-
 body{
   background-color: #f4ead1;
 }
@@ -14,13 +13,6 @@ a {
   text-decoration: none;
 }
 
-/* .heading{
-  position: relative;
-  display: inline-block;
-  background: purple;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-} */
 /* new homePage section */
 nav{
   display: flex;
@@ -43,9 +35,11 @@ nav{
   align-items: center;
   height:80px;
   border-bottom: 5px solid #1b1b1b;
-} */
+}
 
-.admin-btn {
+
+.link-admin {
+
   text-align: center;
   color: #1b1b1b;
   border: 2px solid #1b1b1b;
@@ -123,6 +117,9 @@ nav{
 .about{
   border-bottom: 3px solid #1b1b1b;
 }
+.info{
+  width: 800px;
+}
 .project{
   display: flex;
   flex-direction: row;
@@ -149,6 +146,7 @@ nav{
   position: relative;
   display: inline-block;
   width: 80%;
+
 }
 .item1{
   display: flex;
@@ -160,8 +158,10 @@ nav{
   border: none;
   border-radius:none;
   width: 45%;
+
   height: 90%;
-  border: 1px solid black;
+
+  border: 1px solid #1b1b1b;
   margin: 20px 0;
 }
 
@@ -169,32 +169,13 @@ nav{
   height: 80%;
 }
 
+.item1 img {
+  height: 90%;
+}
+
 button {
   border: none;
 }
-
-
-
-/* original home page */
-.addProductForm{
-  background: red;
-  margin-bottom: 20px;
-}
-.inputIdDiv{
-  background: purple;
-  margin-bottom: 20px;
-}
-.delForm{
-  background: red;
-  margin-bottom: 20px;
-}
-.adminPage{
-  background: purple;
-}
-.registerForm{
-  background: purple;
-}
-/* original home page ENDS */
 
 li{
   list-style: none;
@@ -270,8 +251,6 @@ textarea {
   width: 75%;
   display: flex;
   justify-content: space-between;
-
-
 }
 
 .login-btn {
@@ -385,7 +364,7 @@ div#projectList > div:first-child {
 }
 
 .logout-btn {
-  background-color:white;
+  background-color:#4d6b48;
   color: #1b1b1b;
   border: 1px solid #1b1b1b;
   text-align: center;
