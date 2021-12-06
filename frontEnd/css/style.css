@@ -1,392 +1,198 @@
 /* colours
-black #1b1b1b
-white #f4ead1 */
+blue #283c5d
+dark-blue #061329
+white #f5e3d6
+yellow #e8ec8d
+pink #DB67A6*/
 
 body{
-  background-color: #f4ead1;
+  background-color: #061329;
+  margin: 0px!important;
 }
 
-h1, h2{
-  font-family: sans-serif;
-}
-a {
-  text-decoration: none;
-}
-
-/* new homePage section */
-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height:130px;
-  border-bottom: 5px solid #1b1b1b;
-}
-
-.header-user {
-  text-transform: capitalize;
-}
-
-.fa-hamburger{
-  font-size: 35px;
-}
-.homePageSection{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height:80px;
-  border-bottom: 5px solid #1b1b1b;
-}
-
-
-.link-admin {
-
-  text-align: center;
-  color: #1b1b1b;
-  border: 2px solid #1b1b1b;
-  width:200px;
-  height: auto;
-  padding: 20px 0;
-  cursor:pointer;
-}
-
-.link-admin:hover
-{
-  background: #1b1b1b;
-  color: #f7f7f7;
-}
-
-
-.home-projects{
-  height:60px;
-  border-bottom: 5px solid #1b1b1b;
-}
-.accordian{
-  border: none;
-  box-shadow:none;
-}
-#accordionExample {
-  border: none;
-  box-shadow:none;
-}
-
-.accordion-item{
-  border: none;
-  border-radius:none;
-  border-bottom: 5px solid #1b1b1b;
-  background-color: #f4ead1;
-}
-
-#accordionBtn{
-  border: none;
-  background-color: #f4ead1;
-  box-shadow:none;
-}
-.accordion-title{
+h1 {
+  font-family: 'Yeseva One', cursive;
   font-size: 100px;
-  text-align: left;
-  border: none;
-  box-shadow:none;
-  height:110px;
-  transition: 0.5s;
-}
-.accordion-title:hover {
-  color: #4d6b48;
+  color: #061329;
 }
 
-.accordion-body{
-  display: inline-block;
-  border-radius: none;
-  height:500px;
-  width: 100%;
-  overflow: scroll;
-  border-radius: none;
-  overflow-x: hidden;
-  border: none;
-}
-::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-}
-::-webkit-scrollbar-thumb {
-    background: #f4ead1;
+h2 {
+  font-family: 'Yeseva One', cursive;
+  font-size: 60px;
+  color:  #DB67A6;
+  text-align: center;
 }
 
-.collapse {
-  border-radius: none;
-}
-.about{
-  border-bottom: 3px solid #1b1b1b;
-}
-.info{
-  width: 800px;
-}
-.project{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  margin: auto;
-  height: 450px;
-  border-bottom: 3px solid #1b1b1b;
-}
-.project:last-of-type{
-  border: none;
-}
-
-.project-content {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  width: 45%;
-  height: 90%;
-  margin: 20px 0;
-}
-
-.description{
-  position: relative;
-  display: inline-block;
-  width: 80%;
-
-}
-.item1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  float: right;
-  background: #1b1b1b;
-  border: none;
-  border-radius:none;
-  width: 45%;
-
-  height: 90%;
-
-  border: 1px solid #1b1b1b;
-  margin: 20px 0;
-}
-
-.item1 img {
-  height: 80%;
-}
-
-.item1 img {
-  height: 90%;
+h3 {
+  font-family: 'Yeseva One', cursive;
+  font-size: 30px;
+  color:  #e8ec8d;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 button {
-  border: none;
+  background-color: #e8ec8d;
 }
 
-li{
-  list-style: none;
-}
+/* nav section starts */
 
-
-
-/* forms */
-
-input,
-textarea {
-  margin-left: 10px;
-  background: #ededed;
-  width: 100%;
-  padding: 10px;
-}
-
-.input-sml {
-  border: 1px solid #1b1b1b;
-  height: 40px;
-}
-
-.input-lrg {
-  border: 1px solid #1b1b1b;
-  height: 80px;
-  resize: none;
-}
-
-.update-btn,
-.add-project-btn {
-  background-color:#1b1b1b;
-  border:none;
-  color: #f4ead1;
-  text-align: center;
-  width: 150px;
-  height: auto;
-  padding: 10px 0;
-  cursor: pointer;
-}
-
-
-/* Login overlay begins! */
-.login-overlay {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background: #f4ead1;
+nav {
+  position: relative;
   margin: auto;
-  left:0;
-  top:0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  width: 80%;
+  height:30px;
+  background-color: #061329!important;
 }
 
-.user-login {
-  width: 400px;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+ .nav-item {
+   font-family: 'Merriweather', serif;
+   font-size: 20px;
+   color: #e8ec8d;
+   height:50px;
+   width: 300px;
+   text-decoration: none!important;
+ }
 
-.form-control {
-  border-radius: 0;
-  background: none;
-  width: 300px;
-}
-
-
-.login-buttons {
-  width: 75%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.login-btn {
-  background-color:#1b1b1b;
-  border:none;
-  color: #f4ead1;
-  text-align: center;
-  width: 100px;
-  height: auto;
-  padding: 10px 0;
-  cursor: pointer;
-}
-.register-btn {
-  background-color: #f4ead1;
-  border: 1px solid #1b1b1b;
-  color: #f4ead1;
-  text-align: center;
-  width: 100px;
-  height: auto;
-  padding: 10px 0;
-  cursor: pointer;
-  color: #1b1b1b;
-}
-
-/* Register Overlay */
-.register-overlay {
-  display: none;
-  width: 400px;
-  height: 500px;
-  position: fixed;
-  background: #f4ead1;
-  z-index: 1000;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.exit-register-btn {
+/* new homePage section */
+#home-section {
   position: relative;
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: flex-end;
-  font-size: 20px
-}
-
-.register-form {
-  margin-top: -50px;
-}
-
-.register-exit {
-  padding: 15px;
-  cursor: pointer;
-  color: #1b1b1b;
-}
-
-.flex {
-  display:flex;
-  justify-content: space-between;
-  font-weight: bold;
-}
-.author {
-  margin-left: -2.3%;
-}
-
-
-/* Login overlay ends! */
-.project-strip {
-  height:60px;
-  display: flex;
-  justify-content: space-between;
-  padding:20px;
-  border-bottom:1px solid #9c9c9c;
-}
-.up-del {
-  display: flex;
-  gap:30px;
-  align-self: flex-end;
-  justify-content:flex-end;
-}
-.project-strip div {
-  width:33%;
-}
-
-.project-list-author {
-  text-align: center;
-  text-transform: capitalize;
-
-}
-.project-list-title {
-  color: black;
-}
-div#projectList > div:first-child {
-  border-top:1px solid #9c9c9c!important;
-}
-
-.admin-proj-header {
-  width: 100%;
-  display: flex;
+  height: 740px;
+  width:80%;
+  margin: auto;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.my-btn {
-  background-color:#1b1b1b;
+ img {
+  width: 100%;
+  height: 740px;
+  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+#tagline {
+  position: absolute;
+  width: 700px;
+  text-align: center;
+}
+
+#aboutMe {
+  position: relative;
+  color: #e8ec8d;
+  width: 100%;
+  height: 820px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-me-text {
+  position: absolute;
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+}
+
+.fa-angle-double-down {
+  color: #e8ec8d;
+  font-size: 40px;
+}
+
+/* accordion starts */
+
+.accordion-header {
+  background-color: #061329!important;
+  padding-top: 60px;
+  height: 150px;
+}
+
+.accordion-item {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.accordion-button {
+  background-color: #061329!important;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Yeseva One', cursive;
+  text-align: center;
+  font-size: 50px;
+  color: #e8ec8d!important;
+  height: 100px;
+  text-align: center;
+}
+
+.accordion-body {
+  height: 800px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #061329!important;
+}
+
+.info {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+  color: #e8ec8d;
+  font-size: 20px;
+}
+
+#item1 {
+  height: 300px;
+  margin-top: 20px;
+  margin:auto;
+}
+
+footer {
+  height: 60px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#social {
+  height: 50px;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  text-align: center;
+}
+
+.name {
+  margin: auto;
+  text-align: center;
+  color: #e8ec8d;
+  font-size: 20px;
+}
+
+.fa-github,
+.fa-behance,
+.fa-facebook  {
+  height: 40px;
+  width: 40px;
   color: white;
-  text-align: center;
-  width:170px;
-  height: auto;
-  padding: 20px 0;
-  cursor: pointer;
-  border:none;
+  font-size: 30px;
+  margin-right: 40px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
 }
 
-.logout-btn {
-  background-color:#4d6b48;
-  color: #1b1b1b;
-  border: 1px solid #1b1b1b;
-  text-align: center;
-  padding: 5px 10px;
-  height: auto;
-  cursor: pointer;
-}
-
-.logout-btn {
-  background-color:white;
-  color: #1b1b1b;
-  border: 1px solid #1b1b1b;
-  text-align: center;
-  padding: 5px 10px;
-  height: auto;
-  cursor: pointer;
-}
-
-.fa{
-  color:#1b1b1b;
-}
-
-#addProjectForm, #delProjectForm, #updateProjectForm  {
-  display: none;
-}
+/*  */

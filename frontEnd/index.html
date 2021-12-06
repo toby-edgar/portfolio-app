@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../frontEnd/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous"
-    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
   <!-- custom -->
   <link rel="stylesheet" href="css/style.css">
   <title>Home</title>
@@ -16,113 +18,110 @@
 
 <body id="home" class="container-fluid">
   <!-- nav section -->
-  <nav>
-    <h2 class="text-dark">Portfolios</h2>
 
-    <a class="link-admin" href="admin.html">Admin</a>
-  </nav>
+  <nav class="navbar navbar-expand-lg mt-5">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ">
+      <a class="nav-item  pt-1" href="#">Ambar-rose Design</a>
+    </div>
+  </div>
+</nav>
 
-  <!-- Projects-->
-  <div class="home-projects">
-    <h2 class="text-dark my-4">Our Projects</h2>
+  <div id="home-section">
+
+    <img src="img\Colorful-Paint-Splash-1440x1280.jpg" alt="">
+    <h1 id="tagline">Creativity is intelligence having fun</h1>
+
   </div>
 
-  <!-- KRIS section -->
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 id="headingOne">
+<div id="aboutMe">
+<!--
+  <img src="img\abstract-wallpaper.png" alt=""> -->
 
-      <button id="accordionBtn" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-        <h1 class="accordion-title mt-2">KRIS FURER</h1>
-      </button>
+  <p class="about-me-text col-12">Hi, I'm Ambar Williams <br> <br>I am a Wellington-based Web Developer, UX Researcher and Graphic Designer. <br><br>
+  I have a passion for User Experience design, developing web apps <br> and getting amoungst the psychology of the internet. <br><br><br><br> Scroll to see what I can do for you<br><br><br><br> <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+  </p>
+
+</div>
+
+  <div class="accordion accordion-flush col-12" id="accordionFlushExample">
+  <div class="accordion-item">
+
+    <h2 class="accordion-header" id="flush-headingOne">
+          Website Designs
     </h2>
 
-    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <div class="about">
-          <h2 class="portfolio-name" id="portfolioName">About Kris</h2>
-          <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Ut enim ad minim veniam, quis nostrud. incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-
-        </div>
-      <div id="kris" class="project-section">
+        <h3>Bleeding Needles - WordPress theme website</h3>
+        <p class="info col-12 my-5">This is a customisable Wordpress site that includes Wordpress plugins that allow the administrator <br>to update posts, images, contact form inputs and font colours through out the site. </p>
+        <img id="item1" class="col-4 mx-2" src="img/bleeding1.jpg" alt="">
+        <img id="item1" class="col-3 mx-2" src="img/bleedingMob.jpg" alt="">
+        <img id="item1" class="col-4 mx-2" src="img/customBleeding2.jpg" alt="">
+        <br><br><br><br>
+        <p><i class="fa fa-angle-double-down" aria-hidden="true"></i></p>
 
       </div>
-     </div>
+
+      <div class="accordion-body">
+        <h3>NZ Tourism fullpage Booking Website</h3>
+        <p class="info col-12 my-5">This is a full page.js site that allows the user to place bookings via navigating through the sliders pages. </p>
+        <img id="item1" class="col-4 mx-2" src="img/tourism1.jpg" alt="">
+        <img id="item1" class="col-3 mx-2" src="img/tourism3.jpg" alt="">
+        <img id="item1" class="col-4 mx-2" src="img/tourism2.jpg" alt="">
+        <br><br><br><br>
+        <p><i class="fa fa-angle-double-down" aria-hidden="true"></i></p>
+      </div>
+
+      <div class="accordion-body">
+        <h3>Fortify - Home Monitoring App</h3>
+        <p class="info col-12 my-5">This UX Mobile App is made to help users monitor their homes remotely.This App includes <br> funtionality that allows the users to adjust thermostat temperature, security and lighting.</p>
+        <img id="item1" class="col-3 mx-2" src="img/fortify1.jpg" alt="">
+        <img id="item1" class="col-3 mx-2" src="img/fortify2.jpg" alt="">
+        <img id="item1" class="col-3 mx-2" src="img/fortify3.jpg" alt="">
+        <br><br><br><br>
+        <p><i class="fa fa-angle-double-down" aria-hidden="true"></i></p>
+      </div>
+
+      <div class="accordion-body">
+        <h3>Need a hand - Student job finding app</h3>
+        <p class="info col-12 my-5">This web app has javascript functionality that helps the user to create a login and <br>user profile to help them search throught post types for jobs while they study.</p>
+        <img id="item1" class="col-3 mx-2" src="img/NAH1.jpg" alt="">
+        <img id="item1" class="col-3 mx-2" src="img/NAH3.jpg" alt="">
+        <img id="item1" class="col-3 mx-2" src="img/NAH2.jpg" alt="">
+        <br><br><br><br>
+        <p><i class="fa fa-angle-double-down" aria-hidden="true"></i></p>
+      </div>
+
+      <div class="accordion-body">
+        <h3>Eco.org - Website re-design</h3>
+        <p class="info col-12 my-5">This website re-design contains content regarding the charities news updates and sponsorship options</p>
+        <img id="item1" class="col-4 mx-2" src="img/eco1.jpg" alt="">
+        <img id="item1" class="col-3 mx-2" src="img/eco3.jpg" alt="">
+        <img id="item1" class="col-4 mx-2" src="img/eco2.jpg" alt="">
+
+      </div>
+
     </div>
-   </div>
+
   </div>
 
-   <!-- AMBAR section -->
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-
-      <button id="accordionBtn" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        <h1 class="accordion-title  mt-2">AMBAR WILLIAMS</h1>
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <div class="about">
-          <h2 class="portfolio-name">About Ambar</h2>
-          <p class="info">I am a current student at Yoobee school of Design, working toward my level 6 Diploma in Web and UX development and looking for an opportunity to begin my career as a front end developer and graphic designer. <br><br>
-          During my recent studies I have gained knowledge in what it is like to work with a group on various UX design projects and following agile methods to ensure the projects run effectively for all members. <br><br>
-          My ideal position would be a front-end app developer, working in a team to create beautiful and effective UI for users. I enjoy the research and design stages of app development as I can show my creative side while meeting the constraints that have been set by the client. </p>
-
-        </div>
-        <div id="ambar" class="project-section">
-
-         </div>
-        </div>
-      </div>
-     </div>
+  <footer class="bg-dark">
+    <div id="social" >
+      <p class="name my-3 text-light">Ambar-Rose Design</p>
+      <i class="fa fa-github my-3" aria-hidden="true"></i>
+      <i class="fa fa-behance my-3" aria-hidden="true"></i>
+      <i class="fa fa-facebook my-3" aria-hidden="true"></i>
     </div>
+  </footer>
 
-
-  <!-- TOBY section -->
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-
-      <button id="accordionBtn" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        <h1 class="accordion-title  mt-2">TOBY EDGAR</h1>
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <div class="about">
-          <h2 class="portfolio-name">About Toby</h2>
-
-          <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-
-        </div>
-        <div id="toby" class="project-section">
-
-         </div>
-        </div>
-      </div>
-     </div>
-    </div>
-
-  <!-- Project section::::::::::::::::::::::::::::::::::::::::::::::: -->
-  <!-- <div class="admin-proj-section">
-    <div class="admin-proj-header my-5">
-      <h3>Current Projects</h3>
-
-      <a class="my-btn" href="admin.html">Create New Project</a>
-    </div> -->
-    <!-- List of projects begins -->
-    <!-- <div id="projectList" class='my-5'> -->
-      <!-- Projects injected here -->
-    <!-- </div>
-  </div> -->
-  
-  
 
   <!--Scripts -->
-  <script src="../frontEnd/node_modules/jquery/dist/jquery.min.js">
-  </script>
+  <script src="../frontEnd/node_modules/jquery/dist/jquery.min.js"></script>
   <script src="../frontEnd/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
